@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body style="overflow-y: hidden;">
+    <div class="nav_heroc1">
+        <div id="c1" class="c1">
+        <video class="herobackc1" id="heroback1" src="resources/waterfalls cool.mp4" autoplay muted loop></video>
+    </div>
+    <div class="nav">
+        <div class="navtext">
+            <p id="hassleft">Hassle-Free Trips</p>
+        </div>
+        <div class="navoptions">
+            <a class="options" href="index.html">Home</a>
+                <a class="options" href="index.html">Explore</a>
+                <a class="options" href="hotel.html">Hotels</a>
+                <a class="options" href="flights.html">Flights</a>
+                <a class="options" href="about.html">About</a>
+        </div>
+        <div class="signoptions">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="sigup.html"><button id="Signup">SignUp</button></a>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+           <!--Contact-->
+           <p style="position: absolute; color:black;font-size:3.7rem; font-weight:700; left:38%;top:10%; font-weight:500;font-family:ubuntu">Traveller Details</p>
+    <div id="contactbox" class="contactbox">
+        <div class="addmore" id="addmore">
+            <p class="update" id="update">Traveller 1</p>
+        <span class="dets" style="margin-top: 10px;">Enter First Name:</span><input type="text" style="margin-top: 17px;" class="detsclass firstname" id="firstname" placeholder="First Name"><br>
+        <span class="dets" style="margin-top: 70px;">Enter Last Name:</span><input type="text" style="margin-top: 77px;" class="detsclass lastname" id="lastname" placeholder="Last Name"><br>
+        <span class="dets" style="margin-top: 130px;">Enter Age:</span><input type="number" style="margin-top: 137px;" class="detsclass age" id="age" placeholder="1"><br>
+        <span class="dets" style="margin-top: 193px;">Select DOB:</span><input type="date" style="margin-top: 197px;" id="dateofbirth" class="detsclass dateofbirth"><br>
+        <span class="dets" style="margin-top: 253px; font-size:2.2rem">Mobile Number:</span><input type="number" style="margin-top: 257px;" id="mobilenumber" placeholder="123456789" class="detsclass mobilenumber"><br>
+    </div>
+        <div class="contbuttons">
+        <button class="add" id="add">Add Traveller</button>
+        <button type="submit" class="proceed" id="confirm">Confirm</button>
+    </div>
+    <!-- <a href="hotel.html" style="text-decoration: none;"><input  value="Proceed" class="proceed"id="proceed"></a> -->
+    <a href="hotel.html"><button style="background-color: lightgreen;" type="submit" class="proceed"id="proceed"> Proceed</button></a> 
+</div>
+</body>
+    <!-- Firebase Databse Check-->
+    <script type="module" src="database.js"></script>
+    <script type="module" src="logout.js"></script>
+</html>

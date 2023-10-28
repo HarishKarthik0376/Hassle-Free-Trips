@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight-Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <div class="nav_heroc1">
+        <div id="c1" class="c1">
+        <video class="herobackc2" id="heroback1" src="resources/waterfalls cool.mp4" autoplay muted loop></video>
+    </div>
+    <div class="nav">
+        <div class="navtext">
+            <p id="hassleft">Hassle-Free Trips</p>
+        </div>
+        <div class="navoptions">
+            <a class="options" href="index.html">Home</a>
+                <a class="options" href="index.html">Explore</a>
+                <a class="options" href="hotel.html">Hotels</a>
+                <a class="options" href="flights.html">Flights</a>
+                <a class="options" href="about.html">About</a>
+        </div>
+        <div class="signoptions">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="sigup.html"><button id="Signup">SignUp</button></a>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <!--Flights Selection Page-->
+    <p style="position: absolute; color:white;font-size:4.2rem; left:34%;top:10%; font-weight:500;font-family:ubuntu">Select Your Flight</p>
+    <div class="flightdates">
+        <div class="borderig">
+      <span class="datetext" style="position: relative; left:5.1%">Choose Start Date:</span> <input type="date" id="startdate" class="dates">
+      <span class="datetext" style="position: relative; left:9%">Choose Return Date:</span> <input type="date" id="returndate" class="dates">
+    </div>
+    <button class="searchflights" id="searchflights">Search Flights</button>
+    </div>
+    <p class="why1" id="why1">Why Choose Hassle-Free Trips to Book Your Flights??</p>
+<div class="whyflights" id="whyflights">
+    <ul class="flightsreasons">
+        <li class="freasons"><b>Competitive Prices:</b> Enjoy cost-effective flight bookings with our best price guarantee, ensuring you don't overspend on your travel.</li>
+        <li style="color: #BBCB50;" class="freasons"><b>Convenience:</b>Hassle Free Trips offers a user-friendly platform that allows you to effortlessly compare and select the best flight options tailored to your preferences and budget.</li>
+        <li class="freasons"><b>Exclusive Flight Deals: </b> Access to exclusive flight deals and promotions that are only available to Hassle Free Trips customers, providing additional savings.</li>
+    </ul>
+</div>
+<div class="flightpage" id="flightpage" style="display: none;">
+    <div class="flightbox">
+        <a href="confirmation.html"><button class="nextpage1">Next</button></a>
+        <div class="flightselect" id="flight1">
+            <img class="flightlogo" src="resources/AF.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname1">AirFrance</p>
+            <p class="fromdest" id="from1">Chennai(02:05)</p>
+            <p class="todest" id="to1">Geneva(11:15)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(13h) 1-stop</p>
+            <p class="flightfare" id="flight1price">₹17000/per person</p>
+            <button class="select" id="f1" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight2">
+            <img class="flightlogo" src="resources/EY.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname2">Etihad Airways</p>
+            <p class="fromdest" id="from2">Chennai(04:10)</p>
+            <p class="todest" id="to2">Locarno(07:35)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(31h) 1-stop</p>
+            <p class="flightfare" id="flight2price">₹19500/per person</p>
+            <button class="select" id="f2" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight3">
+            <img class="flightlogo" src="resources/QR.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname3">Qatar Airways</p>
+            <p class="fromdest"id="from3">Mumbai(01:05)</p>
+            <p class="todest"id="to3">Rome(12:15)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(14h) 1-stop</p>
+            <p class="flightfare" id="flight3price">₹14000/per person</p>
+            <button class="select" id="f3" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight4"> <img class="flightlogo" src="resources/LH.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname4">Lufthansa</p>
+            <p class="fromdest" id="from4">Delhi(02:05)</p>
+            <p class="todest" style="font-size: 2.7rem;" id="to4">SaoPaulo(11:15)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(27h) 1-stop</p>
+            <p class="flightfare" id="flight4price">₹17000/per person</p>
+            <button class="select" id="f4" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button></div>
+        <div class="flightselect" id="flight5">
+            <img class="flightlogo" src="resources/UL.png" alt="">
+            <p class="flightname" style="font-size: 2.7rem; margin-left: 70px;" id="flname5">SriLankan Airlines</p>
+            <p class="fromdest" id="from5">Chennai(09:40)</p>
+            <p class="todest" id="to5">Natal(11:00)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(33h) 2-stop</p>
+            <p class="flightfare" id="flight5price">₹13000/per person</p>
+            <button class="select" id="f5" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight6"> <img class="flightlogo" src="resources/SQ.png" alt="">
+            <p class="flightname" style="font-size: 2.7rem; margin-left: 70px;" id="flname6">Singapore Airlines</p>
+            <p class="fromdest" id="from6">Kolkata(23:55)</p>
+            <p class="todest" id="to6">Beijing(14:50)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(14h) 1-stop</p>
+            <p class="flightfare" id="flight6price">₹21000/per person</p>
+            <button class="select" id="f6" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button></div>
+        <div class="flightselect" id="flight7">
+            <img class="flightlogo" src="resources/UK.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname7">Vistara</p>
+            <p class="fromdest" id="from7">Chennai(20:30)</p>
+            <p class="todest" id="to7">China(15:30)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(16h) 1-stop</p>
+            <p class="flightfare" id="flight7price">₹18000/per person</p>
+            <button class="select" id="f7" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight8">
+            <img class="flightlogo" src="resources/AI.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname8">Air India</p>
+            <p class="fromdest" id="from8">Chennai(17:55)</p>
+            <p class="todest" id="to8">Namsos(15:30)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(19h) 2-stop</p>
+            <p class="flightfare" id="flight8price">₹14000/per person</p>
+            <button class="select" id="f8" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button>
+        </div>
+        <div class="flightselect" id="flight9"> <img class="flightlogo" src="resources/AF.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname9">AirFrance</p>
+            <p class="fromdest"id="from9">Chennai(16:00)</p>
+            <p class="todest" id="to9">Geneva(12:15)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(19h) 1-stop</p>
+            <p class="flightfare"id="flight9price">₹17500/per person</p>
+            <button class="select" id="f9" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button></div>
+        <div class="flightselect" id="flight10"> <img class="flightlogo" src="resources/LH.png" alt="">
+            <p class="flightname" style="margin-left: 70px;" id="flname10">Lufthansa</p>
+            <p class="fromdest" id="from10">Delhi(03:05)</p>
+            <p class="todest" id="to10">Rome(1:15)</p>
+            <p class="path"><---------------------></p>
+            <p class="stops">(21h) 2-stop</p>
+            <p class="flightfare" id="flight10price">₹12000/per person</p>
+            <button class="select" id="f10" style="position: absolute; left:86%;top:1%; border:2px solid white">Select</button></div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    document.getElementById("searchflights").addEventListener("click",function()
+        {   if(document.getElementById("startdate").value.length!=0&&document.getElementById("returndate").value.length!=0)
+        {
+            document.getElementById("whyflights").style.display = "none";
+            document.getElementById("why1").style.display = "none";
+            document.getElementById("flightpage").style.display = "block";
+        }     
+        else
+        {
+            document.getElementById("whyflights").style.display = "block";
+            document.getElementById("why1").style.display = "block";
+            document.getElementById("flightpage").style.display = "none";
+        }      
+        })
+</script>
+<script type="module" src="logout.js"></script>
+<script type="module" src="flight.js"></script>

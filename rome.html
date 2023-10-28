@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <div class="nav">
+        <div class="navtext">
+            <p id="hassleft">Hassle-Free Trips</p>
+        </div>
+        <div class="navoptions">
+            <a class="options" href="index.html">Home</a>
+            <a class="options" href="index.html">Explore</a>
+            <a class="options" href="hotel.html">Hotels</a>
+            <a class="options" href="flights.html">Flights</a>
+            <a class="options" href="about.html">About</a>
+        </div>
+        <div class="signoptions">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="sigup.html"><button id="Signup">SignUp</button></a>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <!--Booking Conirmation-->
+    <div class="confirmation">
+        <div class="confirmbox">
+            <h3 class="intro">Rome</h3>
+            <h4 class="intro1">₹60,000</h4>
+            <p class="intro2">(Approx Per Person)</p>
+            <span class="dis">Details About Package:</span><p class="description">
+                This package includes a 4-day, 5-night stay in Rome, with both hotel and flight charges included for your convenience.
+
+                Please note that if you wish to change your hotel or flight, additional charges may apply. Our team is here to assist you with any adjustments to make your trip even more tailored to your preferences. We look forward to ensuring you have an unforgettable experience in Rome!</p>
+            <div class="quant">
+                <p class="quanttxt">Number Of Adults(12+):</p>
+                <input type="number" style="margin-left: 70px;" class="num" value="1" max="15" min="1">
+                <p class="quanttxt" style="margin-top: 13px;">Number Of Children:</p>
+                <input type="number" style="margin-top: 51px; margin-left:30px;" class="num" value="0" max="15" min="0">
+            </div> 
+            <div class="book">
+                <a href="contact.html"><input type="button" class="order" id="order" value="Confirm"></a>
+            </div>
+            </div>
+            <div class="imgsection">
+                <div class="imgbox">
+                    <div class="norway" id="Rome" style="display: block;">
+                       <img class="norvid" src="resources/Rome.jpg" alt="">
+                    </div>
+    </div>
+</body>
+<script type="module" src="logout.js"></script>
+</html>

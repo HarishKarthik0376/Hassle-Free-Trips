@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <div class="nav">
+        <div class="navtext">
+            <p id="hassleft">Hassle-Free Trips</p>
+        </div>
+        <div class="navoptions">
+            <a class="options" href="index.html">Home</a>
+            <a class="options" href="#popular">Explore</a>
+            <a class="options" href="hotel.html">Hotels</a>
+            <a class="options" href="flights.html">Flights</a>
+            <a class="options" href="about.html">About</a>
+        </div>
+        <div id="signoptions" class="signoptions">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="sigup.html"><button id="Signup">SignUp</button></a>
+           <button id="logout">Logout</button>
+        </div>
+        </div>
+        <!--End Of Navigation Bar-->
+
+     <!--Start Of Billing Page-->   
+     <div class="billsection">
+        <div class="billbox" id="billbox">
+            <p id="confirmah">Billing Details</p>
+            <div class="hotels" id="hotels">
+            <span class="whatdetails" id="whatdetails1" style="font-size: 1.4rem;">Hotel Selected:</span><p style="margin-left: 5px;" class="detailsdis" id="detailsdis"></p>
+            <span class="whatdetails" id="whatdetails2">Hotel Price:</span><p class="detailsdis" id="detailsdis1"></p>
+            <span class="whatdetails" id="whatdetails3">Flight Name:</span><p class="detailsdis" id="detailsdis2"></p>
+            <span style="font-size: 1.1rem;" class="whatdetails" id="whatdetails8">Date of Departure:</span><p style="margin-left: 10px;margin-top:4px" class="detailsdis" id="detailsdis7"></p>
+            <span style="font-size: 1.2rem;" class="whatdetails" id="whatdetails9">Date of Return:</span><p class="detailsdis" id="detailsdis8"></p>
+            <span class="whatdetails" id="whatdetails10">Departure:</span><p class="detailsdis" id="detailsdis9"></p>
+            <span class="whatdetails" id="whatdetails11">Arival:</span><p class="detailsdis" id="detailsdis10"></p>
+            <span class="whatdetails" id="whatdetails4">Adults:</span><p class="detailsdis" id="detailsdis3"></p>
+            <span class="whatdetails" id="whatdetails5">Children:</span><p class="detailsdis" id="detailsdis4"></p>
+            <span class="whatdetails" id="whatdetails6">Flight Price Adult:</span><p style="margin-left: 50px;" class="detailsdis" id="detailsdis5"></p>
+            <span style="font-size: 1.3rem;" class="whatdetails" id="whatdetails7">Flight Price Child(50% Off):</span><p style="margin-left: 110px;" class="detailsdis" id="detailsdis6"></p>
+            <span style="font-size: 1.3rem;" class="whatdetails" id="whatdetails12">Total(Hotel+Flight+Tax):</span><p style="margin-left: 80px;color:#678CEC" class="detailsdis" id="detailsdis11"></p>
+        </div>
+        <button id="paynow">Pay Now</button>
+        </div>
+     </div>
+     <div class="payementdone" id="paymentdone" style="display: none;">
+        <img id="tick" src="resources/png-clipart-check-mark-tick-green-tick-mark-angle-leaf-removebg-preview.png" alt="">
+        <p id="booking_confirmed">Booking Confirmed</p>
+        <p id="booking_confirmed1">Booking Id:</p><span id="bookid"></span>
+        <button id="gohome">Home</button>
+     </div>
+</body>
+<script type="module" src="logout.js"></script>
+<script type="module" src="confirmation.js"></script>
+</html>
+<script>
+    document.getElementById("paynow").addEventListener("click",function()
+    {
+        document.getElementById("billbox").style.display = "none";
+        document.getElementById("paymentdone").style.display = "block";
+        var bookid = generateUniqueKey();
+        document.getElementById("bookid").innerHTML = bookid;
+    })
+    function generateUniqueKey() {
+        return new Date().getDate() + Math.random().toString(36).substr(2, 9);
+      };
+   document.getElementById("gohome").addEventListener("click",function()
+   {
+        window.open("index.html","_parent");
+   })   
+</script>
