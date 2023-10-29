@@ -54,7 +54,7 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
     })
    
     document.getElementById("select2").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/'+userID+userID);
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel SwizStar Selcted")
         {
