@@ -45,8 +45,9 @@ let flightprice10 = document.getElementById("flight10price").textContent;
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
+        const userID = user.uid;
 document.getElementById("f1").addEventListener("click",function()
-{   const flightdataexists= ref(database, 'Flight_Details/');
+{   const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
@@ -55,7 +56,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to1").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight1,
         Price: flightprice1,
         Adults:adults,
@@ -66,12 +67,14 @@ alert("Flight Selected!!")
         Dateofret:date_of_return
         
     })
+    
 }
 })
 document.getElementById("f2").addEventListener("click",function()
 {
-const flightdataexists= ref(database, 'Flight_Details/');
+const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -79,7 +82,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to2").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight2,
         Price: flightprice2,
         Adults:adults,
@@ -93,8 +96,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f3").addEventListener("click",function()
-{   const flightdataexists= ref(database, 'Flight_Details/');
+{   const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -102,7 +106,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to3").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight3,
         Price: flightprice3,
         Adults:adults,
@@ -116,8 +120,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f4").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -125,7 +130,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to4").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight4,
         Price: flightprice4,
         Adults:adults,
@@ -139,8 +144,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f5").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -148,7 +154,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to5").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+user),{
         Flight_Name:flight5,
         Price: flightprice5,
         Adults:adults,
@@ -162,8 +168,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f6").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -171,7 +178,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to6").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight6,
         Price: flightprice6,
         Adults:adults,
@@ -185,8 +192,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f7").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -194,7 +202,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to7").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight7,
         Price: flightprice7,
         Adults:adults,
@@ -208,8 +216,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f8").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -217,7 +226,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to8").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight8,
         Price: flightprice8,
         Adults:adults,
@@ -231,8 +240,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f9").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -240,7 +250,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to9").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight9,
         Price: flightprice9,
         Adults:adults,
@@ -254,8 +264,9 @@ alert("Flight Selected!!")
 }
 })
 document.getElementById("f10").addEventListener("click",function()
-{const flightdataexists= ref(database, 'Flight_Details/');
+{const flightdataexists= ref(database, 'Flight_Details/'+userID);
 remove(flightdataexists)
+
 alert("Flight Selected!!")
 {   var adults = prompt("Enter Number Of Travellers(Age 12+):");
     var children = prompt("Enter Number of child(If none enter 0):");
@@ -263,7 +274,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to10").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight10,
         Price: flightprice10,
         Adults:adults,
