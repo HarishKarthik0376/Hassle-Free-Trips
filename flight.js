@@ -154,7 +154,7 @@ alert("Flight Selected!!")
     var todest = document.getElementById("to5").textContent;
     var date_of_dep =  document.getElementById("startdate").value;
     var date_of_return = document.getElementById("returndate").value;
-    set(ref(database, 'Flight_Details/'+user),{
+    set(ref(database, 'Flight_Details/'+userID),{
         Flight_Name:flight5,
         Price: flightprice5,
         Adults:adults,
