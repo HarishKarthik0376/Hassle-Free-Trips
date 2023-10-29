@@ -26,8 +26,8 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
     if (user) {
       const userID = user.uid;
       console.log(userID);
-      const hotelquery = ref(database,"Hotel Details/");
-      const flightquery = ref(database,"Flight_Details/");
+      const hotelquery = ref(database,"Hotel Details/"+userID);
+      const flightquery = ref(database,"Flight_Details/"+userID);
       onValue(hotelquery, (snapshot) => {
         const hoteldata = snapshot.val();
         if (hoteldata) {
