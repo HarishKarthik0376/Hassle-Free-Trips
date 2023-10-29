@@ -54,9 +54,9 @@ onAuthStateChanged(auth, (user) => {
     logout.addEventListener("click", () => {
             const travelerDataRef = ref(database, 'TravellerDetails/' + userID + "Newkey");
             remove(travelerDataRef)
-            const hotelref = ref(database,'Hotel Details/');
+            const hotelref = ref(database,'Hotel Details/'+userID);
             remove(hotelref);
-            const flightdataexists= ref(database, 'Flight_Details/');
+            const flightdataexists= ref(database, 'Flight_Details/'+userID);
             remove(flightdataexists);
       signOut(auth)
         .then(() => {
