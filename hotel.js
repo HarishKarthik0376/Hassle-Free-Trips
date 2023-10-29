@@ -38,12 +38,13 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
     
     onAuthStateChanged(auth, (user) => {
         if (user) {
+            const userID = user.uid;
     document.getElementById("select1").addEventListener("click",function()
-    {   const hoteldataexists= ref(database, 'Hotel Details/');
+    {   const hoteldataexists= ref(database, 'Hotel Details/'+userID);
         remove(hoteldataexists)
         alert("Hotel Victoria Selected")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel1,
                 Price: hprice1
                 
@@ -53,11 +54,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
     })
    
     document.getElementById("select2").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID+userID);
     remove(hoteldataexists)
         alert("Hotel SwizStar Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel2,
                 Price: hprice2
                 
@@ -65,11 +66,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
         }
     })
     document.getElementById("select3").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel Unique Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel3,
                 Price: hprice3
             })
@@ -78,10 +79,10 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
     })
   
     document.getElementById("select4").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel Holiday Inn Selcted")
-        {   set(ref(database, 'Hotel Details/'),{
+        {   set(ref(database, 'Hotel Details/'+userID),{
             Hotel_Name: hotel4,
             Price: hprice4
             
@@ -89,11 +90,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
         }
     })
     document.getElementById("select5").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel Delle Nazioni Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel5,
                 Price: hprice5
                 
@@ -101,11 +102,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
         }
     })
     document.getElementById("select6").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel Bristol Bergen Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel6,
                 Price: hprice6
                 
@@ -113,11 +114,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
         }
     })
     document.getElementById("select7").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hyatt Place Shanghai Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel7,
                 Price: hprice7
                 
@@ -125,11 +126,11 @@ import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/fire
         }
     })
     document.getElementById("select8").addEventListener("click",function()
-    {const hoteldataexists= ref(database, 'Hotel Details/');
+    {const hoteldataexists= ref(database, 'Hotel Details/'+userID);
     remove(hoteldataexists)
         alert("Hotel Schweizerhof Selcted")
         {
-            set(ref(database, 'Hotel Details/'),{
+            set(ref(database, 'Hotel Details/'+userID),{
                 Hotel_Name: hotel8,
                 Price: hprice8
                 
